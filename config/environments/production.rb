@@ -1,6 +1,17 @@
 Startersapp::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
+  config.action_mailer.default_url_options = { :host => 'starters-app.herokuapp.com' }
+
+  config.action_mailer.smtp_settings = {
+  address:              'smtp.gmail.com',
+  port:                 587,
+  domain:               'musiorski.com',
+  user_name:            'test@musiorski.com',
+  password:             'Te3tEm@il',
+  authentication:       'plain',
+  enable_starttls_auto: true  }
+
   # Code is not reloaded between requests
   config.cache_classes = true
 

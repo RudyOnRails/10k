@@ -1,4 +1,4 @@
-class AddConfirmableToUsers < ActiveRecord::Migration
+class AddDeviseConfirmableToUsers < ActiveRecord::Migration
   # https://github.com/plataformatec/devise/wiki/How-To:-Add-:confirmable-to-Users
   # Note: You can't use change, as User.update_all with fail in the down migration
   def up
