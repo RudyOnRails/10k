@@ -39,16 +39,6 @@ strong, b{
 em, i{
   font-style: oblique;
 }
-ul, ol{
-  line-height: 20px;
-  margin: 20px 0 20px 16px;
-}
-ul{
-  list-style: disc outside;
-}
-ol{
-  list-style: decimal outside;
-}
 code{
   font-family: $codeFontStack;
 }
@@ -65,6 +55,17 @@ a{
     text-decoration: underline;
   }
 }
+
 // Lists
+ul, ol{
+  line-height: 20px;
+  margin: 20px 0 20px 16px;
+}
+ul{
+  list-style: disc outside;
+}
+ol{
+  list-style: decimal outside;
+}
 
 // Form Elements
