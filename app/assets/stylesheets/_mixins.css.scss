@@ -25,3 +25,10 @@
   }
   *zoom: 1; // IE 6-7
 }
+
+@mixin text-replacement($imageSrc){
+  background: transparent url($imageSrc) no-repeat 0 0;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
