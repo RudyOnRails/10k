@@ -1,0 +1,4 @@
+@mixin font-size( $size, $baseSize: $baseFontSize ){ // Uses new REM unit with IE fallback
+  font-size: $size;
+  font-size: ($size / $baseSize) * 1rem;
+}
