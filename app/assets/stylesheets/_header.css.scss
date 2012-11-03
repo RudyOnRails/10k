@@ -2,9 +2,22 @@
   background: #fff;
   @include box-shadow(0 0 20px rgba(0,0,0,.2));
   padding: 40px 0 30px;
+
+  .clearfix{
+    position: relative;
+  }
 }
+
+// Login/Out
+#userCorner{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 #logo{
   height: 49px;
+  margin: 0;
   width: 113px;
 
   a{

@@ -8,7 +8,9 @@
   $totalColumns: $siteColumns, 
   $contextWidth: $siteWidth, 
   $gutterSize: $gridGutter){
-  width: (((($columnCount / $totalColumns) * $contextWidth) - $gutterSize) / $contextWidth) * 100%;
+  // Need to fix the math
+  // width: (((($columnCount / $totalColumns) * $contextWidth) - $gutterSize) / $contextWidth) * 100%;
+  width: (($columnCount / $totalColumns) * $contextWidth);
 }
 
 @mixin column-margin( $gutter: $gridGutter, $contextWidth: $siteWidth ){

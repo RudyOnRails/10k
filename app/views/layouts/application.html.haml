@@ -19,7 +19,7 @@
     = stylesheet_link_tag "application", :media => "all"
 
     = javascript_include_tag "http://cdnjs.cloudflare.com/ajax/libs/bonsai/0.4/bonsai.min.js"
-    = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Droid+Sans:400,700", "application", :media => "all"
+    = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Ubuntu:400,700|Droid+Serif:400,700,400italic", "application", :media => "all"
 
     %link(href="images/apple-touch-icon-144x144.png" rel="apple-touch-icon-precomposed" sizes="144x144")
     %link(href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon-precomposed" sizes="114x114")
@@ -33,20 +33,19 @@
         .clearfix
           .span3
             %h1#logo= link_to "10K", home_path
-          %nav#usercorner.span9
-            - if user_signed_in?
-              = current_user.email
-              |
-              = link_to("Sign Out", destroy_user_session_path, :method => :delete )
-            - else
-              =link_to("Sign In", new_user_session_path)
-              |
-              =link_to("Sign Up", new_user_registration_path)
-            %a.brand{ :href => root_path }
-              10k
-            .container.nav-collapse
-              %ul.nav
-              %li= link_to "Link 1"
+          %nav#primaryNavigation.span9
+            %ul.horiztonal
+              %li= link_to "Dashboard", "#"
+              %li= link_to "Activities", "#"
+          %nav#userCorner
+            %ul.horiztonal
+              - if user_signed_in?
+                = current_user.email
+                = link_to("Sign Out", destroy_user_session_path, :method => :delete )
+              - else
+                =link_to("Sign In", new_user_session_path)
+                |
+                =link_to("Sign Up", new_user_registration_path)
 
     .container
       .row

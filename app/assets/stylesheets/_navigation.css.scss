@@ -1,0 +1,12 @@
+nav{
+  .horizontal{
+    display:none;
+
+    li{
+      float: left;
+      a{
+        display: inline-block;
+      }
+    }
+  }
+}
