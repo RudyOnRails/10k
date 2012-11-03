@@ -11,10 +11,12 @@
 // Login/Out
 #userCorner{
   position: absolute;
-  top: 0;
   right: 0;
+  text-transform: lowercase;
+  top: -20px;
 }
 
+// Branding
 #logo{
   height: 49px;
   margin: 0;
@@ -26,4 +28,12 @@
     @include text-replacement("logo.gif");
     width: 100%;
   }
+}
+
+// Navigation
+#primaryNavigation ul{
+  float: right;
+  font-family: $headlineFontStack;
+  @include font-size(16px);
+  text-transform: uppercase;
 }
