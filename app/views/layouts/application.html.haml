@@ -25,10 +25,11 @@
 
 
   %body
-    .navbar.navbar-fixed-top
-      .navbar-inner
-        .container
-          #usercorner
+    %header#primaryHeader
+      .container
+        .clearfix
+          %h1#branding.span3= link_to "10K", home_path
+          %nav#usercorner.span9
             - if user_signed_in?
               = current_user.email
               |
@@ -37,19 +38,17 @@
               =link_to("Sign In", new_user_session_path)
               |
               =link_to("Sign Up", new_user_registration_path)
-          %a.brand{ :href => root_path }
-            10k
-          .container.nav-collapse
-            %ul.nav
+            %a.brand{ :href => root_path }
+              10k
+            .container.nav-collapse
+              %ul.nav
               %li= link_to "Link 1"
 
     .container
-
-      .content
-        .row
-          .span9
-            -# TODO: bootstrap_flash
-            = yield
+      .row
+        .span12
+          -# TODO: bootstrap_flash
+          = yield
     
       %footer
         %p &copy; Starters'App 2012

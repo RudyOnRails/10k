@@ -23,11 +23,34 @@
     %link(href="images/apple-touch-icon.png" rel="apple-touch-icon-precomposed")
     %link(href="images/favicon.ico" rel="shortcut icon")
 
-    .container
-      = render 'signup'
+  %body
+    %header#primaryHeading.container
+      .clearfix
+        %h1#branding.span3= link_to "10K", home_path
+        %nav#usercorner.span9
+          - if user_signed_in?
+            = current_user.email
+            |
+            = link_to("Sign Out", destroy_user_session_path, :method => :delete )
+          - else
+            =link_to("Sign In", new_user_session_path)
+            |
+            =link_to("Sign Up", new_user_registration_path)
+          %a.brand{ :href => root_path }
+            10k
+          .container.nav-collapse
+            %ul.nav
+              %li= link_to "Link 1"
 
+    .container
+      .row
+        .span12
+          -# TODO: bootstrap_flash
+          = yield
+    
       %footer
-        %p &copy; Company 2012
+        %p &copy; Starters'App 2012
+
     /
       Javascripts
       \==================================================
