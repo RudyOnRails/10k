@@ -11,4 +11,10 @@ class PagesController < ApplicationController
     
   end
 
+  def user
+    @user = current_user
+    @my_activities = current_user.activities
+
+  end
+
 end

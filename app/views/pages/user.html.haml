@@ -1,0 +1,36 @@
+#SkillsChart
+
+#HoursChart
+
+:javascript
+  bonsai.run(document.getElementById('SkillsChart'), {url: '/assets/PieChart.js', 
+    code: function() {
+      new PieChart({ 
+        'BonsaiJS': 5,
+        'Ruby on Rails': 20,
+        'HTML/CSS': 30,
+        'CoffeeScript': 8,
+        'jQuery': 19,
+        'AngularJS': 18
+      });
+    },
+    width: 700, height: 400 });
+
+  bonsai.run(document.getElementById('HoursChart'), {url: '/assets/PieChart.js', 
+    code: function() {
+      new PieChart({ 
+        'BonsaiJS': 5,
+        'Ruby on Rails': 20,
+        'HTML/CSS': 30,
+        'CoffeeScript': 8,
+        'jQuery': 19,
+        'AngularJS': 18
+      });
+    },
+    width: 700, height: 400 });
+
+=link_to("Add Activity", new_activity_path)
+%br
+-@my_activities.each do |a|
+  =a.name
+  %br

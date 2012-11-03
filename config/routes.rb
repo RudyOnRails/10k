@@ -8,5 +8,6 @@ Tenk::Application.routes.draw do
   root :to => 'pages#home'
   get 'home' => 'pages#home'
   get 'ipsum' => 'pages#ipsum'
+  get 'user' => 'pages#user'
 
 end
