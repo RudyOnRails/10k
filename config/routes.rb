@@ -1,4 +1,4 @@
-Startersapp::Application.routes.draw do
+Tenk::Application.routes.draw do
   devise_for :users
 
   root :to => 'pages#home'

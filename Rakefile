@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Startersapp::Application.load_tasks
+Tenk::Application.load_tasks
