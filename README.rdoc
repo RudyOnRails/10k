@@ -1,5 +1,4 @@
 == 10k Portfolio
 
 This is a project for a Starter League Alumni Hackathon. 10k is a place to keep track of all the things you do to work
-towards becoming an expert in your field. Your total hours are tallied based on manual entries, and (once the NY data-
-centers are back up) HarvestApp projects.
+towards becoming an expert in your field. Your total hours are tallied based on manual entries, and (once the NY data-centers are back up) HarvestApp projects.
