@@ -2,3 +2,9 @@
 
 :javascript
 	bonsai.run(document.getElementById('PieChart'), {url: '/assets/PieChart.js', width: 500, height: 400 });
+
+=link_to("Add Activity", new_activity_path)
+%br
+-@my_activities.each do |a|
+  =a.name
+  %br
