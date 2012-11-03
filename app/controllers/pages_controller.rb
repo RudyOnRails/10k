@@ -7,6 +7,7 @@ class PagesController < ApplicationController
   end
 
   def home
+    @my_activities = current_user.activities
     
   end
 
