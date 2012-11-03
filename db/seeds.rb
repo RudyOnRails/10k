@@ -17,11 +17,11 @@ apprenticeship = ActivityType.create(:name => 'Apprenticeship')
 
 
 User.delete_all
-kevin = User.create(:email => "musiorski@gmail.com", :password => "10kportfolio", :password_confirmation => "10kportfolio", :confirmed_at => Time.now)
-zeke = User.create(:email => "ebinion@gmail.com", :password => "10kportfolio", :password_confirmation => "10kportfolio", :confirmed_at => Time.now)
-greg = User.create(:email => "vincentgwilliams@gmail.com", :password => "10kportfolio", :password_confirmation => "10kportfolio", :confirmed_at => Time.now)
-shawna = User.create(:email => "hello@shawna-x.com", :password => "10kportfolio", :password_confirmation => "10kportfolio", :confirmed_at => Time.now)
-john = User.create(:email => "contrerasnet@gmail.com", :password => "10kportfolio", :password_confirmation => "10kportfolio", :confirmed_at => Time.now)
+kevin = User.create(:email => "musiorski@gmail.com", :password => "10kportfolio", :password_confirmation => "10kportfolio")
+zeke = User.create(:email => "ebinion@gmail.com", :password => "10kportfolio", :password_confirmation => "10kportfolio")
+greg = User.create(:email => "vincentgwilliams@gmail.com", :password => "10kportfolio", :password_confirmation => "10kportfolio")
+shawna = User.create(:email => "hello@shawna-x.com", :password => "10kportfolio", :password_confirmation => "10kportfolio")
+john = User.create(:email => "contrerasnet@gmail.com", :password => "10kportfolio", :password_confirmation => "10kportfolio")
 
 Activity.delete_all
 #was about to seed activities
