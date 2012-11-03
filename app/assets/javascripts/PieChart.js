@@ -174,10 +174,10 @@ PieChart.prototype = {
 };
 
 new PieChart({
-  Coke: 5,
-  Lemonade: 20,
-  Water: 30,
-  Beer: 8,
-  Coffee: 19,
-  Juice: 18
+  'BonsaiJS': 5,
+  'Ruby on Rails': 20,
+  'HTML/CSS': 30,
+  'CoffeeScript': 8,
+  'jQuery': 19,
+  'AngularJS': 18
 });
