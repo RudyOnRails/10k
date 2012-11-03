@@ -26,10 +26,11 @@
     %link(href="images/favicon.ico" rel="shortcut icon")
 
   %body
-    %header#primaryHeader
+    %header#primaryHeader{:role => "banner"}
       .container
         .clearfix
-          %h1#branding.span3= link_to "10K", home_path
+          .span3
+            %h1#logo= link_to "10K", home_path
           %nav#usercorner.span9
             - if user_signed_in?
               = current_user.email

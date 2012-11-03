@@ -1,3 +1,16 @@
 #primaryHeader{
   background: #fff;
+  @include box-shadow(0 0 20px rgba(0,0,0,.2));
+  padding: 40px 0 30px;
+}
+#logo{
+  height: 49px;
+  width: 113px;
+
+  a{
+    display: block;
+    height: 49px;
+    @include text-replacement("logo.gif");
+    width: 100%;
+  }
 }
