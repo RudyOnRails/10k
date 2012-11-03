@@ -64,7 +64,7 @@ Sector.prototype.getDimensions = function() {
 };
 
 
-PieChart.BASE_COLOR = color('red');
+PieChart.BASE_COLOR = color('#1aa39c');
 
 function PieChart(data) {
   this.angle = 0;
@@ -82,7 +82,7 @@ PieChart.prototype = {
     var start = this.angle,
         end = start + (Math.PI*2) * value/100,
         // Increase hue by .1 with each slice (max of 10 will work)
-        kolor = this.kolor = this.kolor.clone().hue(this.kolor.hue()+.1);
+        kolor = this.kolor = this.kolor.clone().darker(.04);
 
     var s = new Sector(
       400, 200, 150,
@@ -172,12 +172,3 @@ PieChart.prototype = {
     return g;
   }
 };
-
-new PieChart({
-  'BonsaiJS': 5,
-  'Ruby on Rails': 20,
-  'HTML/CSS': 30,
-  'CoffeeScript': 8,
-  'jQuery': 19,
-  'AngularJS': 18
-});
