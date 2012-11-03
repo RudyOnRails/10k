@@ -9,23 +9,14 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require_tree .
- */
+*/
 
-#usercorner {
-  position: absolute;
-  top: 0;
-  right: 1%;
-  margin: 15px 0;
-  font-size: 17px;
-  ul {
-    list-style: none;
-  }
-    li {
-      display: block;
-    }
-}
+@charset "UTF-8";
 
-#usercorner input, textarea, select, .uneditable-input {
-  height: 10px
-}
+@import "compass";
+@import "normalize";
+@import "variables";
+@import "mixins";
+@import "base";
+@import "grid";
+@import "header";
