@@ -5,7 +5,7 @@ gem 'rails', '3.2.8'
 gem 'devise'
 
 gem 'jquery-rails'
-gem 'haml-rails'
+gem 'haml'
 gem 'compass-rails', '~> 1.0.3'
 
 group :development, :test do
